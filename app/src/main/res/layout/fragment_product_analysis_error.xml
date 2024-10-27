@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devappspros.barcodescanner.presentation.customView.DevAppsExpandableCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:isOpen="true"
+    tools:context=".presentation.views.fragments.barcodeAnalysis.analysis.unknownProduct.DevAppsProductAnalysisErrorFragmentDevApps">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fragment_product_analysis_error_header_icon_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/normal_margin"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            app:tint="?android:textColorPrimary"
+            android:src="@drawable/baseline_warning_24"
+            android:contentDescription="@string/image_view_description_icon" />
+
+        <TextView
+            android:id="@+id/fragment_product_analysis_error_header_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/fragment_product_analysis_error_header_icon_image_view"
+            android:layout_centerVertical="true"
+            android:text="@string/warning_label"
+            style="@style/AppTheme.TextView.Appearance.Title.Primary" />
+
+    </RelativeLayout>
+
+    <!-- Body -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fragment_product_analysis_error_information_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.TextView.Appearance.Normal.Primary" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_product_analysis_error_message_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:layout_below="@id/fragment_product_analysis_error_information_text_view">
+
+            <TextView
+                android:id="@+id/fragment_product_analysis_error_message_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scan_error_message_label"
+                style="@style/AppTheme.TextView.Appearance.Normal.Primary" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_product_analysis_error_message_label"
+                android:layout_marginTop="@dimen/small_margin"
+                android:padding="@dimen/normal_margin"
+                android:background="?android:windowBackground">
+
+                <TextView
+                    android:id="@+id/fragment_product_analysis_error_message_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</com.devappspros.barcodescanner.presentation.customView.DevAppsExpandableCardView>

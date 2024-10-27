@@ -1,0 +1,173 @@
+<PreferenceScreen
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/preferences_appearance_title">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomListPreference
+            app:key="@string/preferences_color_key"
+            app:title="@string/preferences_color"
+            android:summary="%s"
+            android:entries="@array/preference_color_entries"
+            android:entryValues="@array/preference_color_values"
+            app:defaultValue="blue" />
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomListPreference
+            app:key="@string/preferences_theme_key"
+            app:title="@string/preferences_theme_label"
+            android:summary="%s"
+            android:entries="@array/preference_theme_entries"
+            android:entryValues="@array/preference_theme_values"
+            app:defaultValue="system" />
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/preferences_languages_title">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreference
+            app:key="@string/preferences_languages_key"
+            app:title="@string/preferences_languages_change" />
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/preferences_remote_api_title">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_switch_scan_search_on_api_key"
+            android:title="@string/preferences_switch_scan_search_on_api_label"
+            android:defaultValue="true"
+            app:singleLineTitle="false"/>
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomListPreference
+            app:key="@string/preferences_remote_api_choose_key"
+            app:title="@string/preferences_remote_api_to_use_label"
+            app:dialogTitle="@string/preferences_remote_api_choose_label"
+            android:summary="%s"
+            android:entries="@array/preference_remote_api_choose_entries"
+            android:entryValues="@array/preference_remote_api_choose_values"
+            app:defaultValue="@string/preferences_entry_value_food"
+            app:singleLineTitle="false" />
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreference
+            app:key="@string/preferences_remote_api_information_about_api_key"
+            app:title="@string/preferences_information_about_remote_api_title" />
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/preferences_scan_title">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_switch_scan_vibrate_key"
+            android:title="@string/preferences_switch_scan_vibrate_label"
+            android:defaultValue="false"
+            app:singleLineTitle="false"/>
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_switch_scan_bip_key"
+            android:title="@string/preferences_switch_scan_bip_label"
+            android:defaultValue="false"
+            app:singleLineTitle="false"/>
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_switch_scan_screen_rotation_key"
+            android:title="@string/preferences_switch_scan_screen_rotation_label"
+            android:defaultValue="true"
+            app:singleLineTitle="false"/>
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_switch_scan_barcode_copied_key"
+            android:title="@string/preferences_switch_scan_barcode_copied_label"
+            android:defaultValue="false"
+            app:singleLineTitle="false"/>
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSeekBarPreference
+            android:key="@string/preferences_seek_bar_camera_default_zoom_value_key"
+            android:title="@string/slider_description_zoom"
+            android:summary="@string/preferences_seek_bar_camera_default_zoom_value_label"
+            android:defaultValue="50"
+            android:min="0"
+            android:max="100"/>
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/preferences_barcode_generation_title">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomListPreference
+            android:key="@string/preferences_barcode_generation_error_correction_level_key"
+            android:title="@string/qr_code_error_correction_level_settings_label"
+            android:summary="%s"
+            android:entries="@array/preference_barcode_generation_error_correction_level_entries"
+            android:entryValues="@array/preference_barcode_generation_error_correction_level_values"
+            app:defaultValue="low"
+            app:singleLineTitle="false"/>
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/title_history">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_switch_scan_add_barcode_to_the_history_key"
+            android:title="@string/preferences_switch_scan_add_barcode_to_the_history_label"
+            android:defaultValue="true"
+            app:singleLineTitle="false"/>
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_switch_barcode_generation_add_barcode_to_the_history_key"
+            android:title="@string/preferences_switch_barcode_generation_add_barcode_to_the_history_label"
+            android:defaultValue="false"
+            app:singleLineTitle="false"/>
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_switch_history_save_duplicates_key"
+            android:title="@string/preferences_switch_history_save_duplicates_label"
+            android:summaryOn="@string/preferences_switch_history_save_duplicates_summary_on"
+            android:summaryOff="@string/preferences_switch_history_save_duplicates_summary_off"
+            android:defaultValue="true"
+            app:singleLineTitle="false"/>
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/preferences_search_title">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomListPreference
+            android:key="@string/preferences_search_engine_key"
+            android:title="@string/preferences_search_engine"
+            android:summary="%s"
+            android:entries="@array/preference_search_engine_entries"
+            android:entryValues="@array/preference_search_engine_values"
+            app:defaultValue="google"/>
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreference
+            app:key="@string/preferences_custom_search_urls_key"
+            app:title="@string/custom_search_urls"/>
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/preferences_additional_options">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomSwitchPreferenceCompat
+            android:key="@string/preferences_display_barcode_image_results_view_key"
+            android:title="@string/preferences_display_barcode_image_results_view"
+            android:defaultValue="false"
+            app:singleLineTitle="false"/>
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+    <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory
+        android:title="@string/preferences_about_title">
+
+        <com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreference
+            app:key="@string/preferences_about_permissions_key"
+            app:title="@string/preferences_about_permissions_label" />
+
+    </com.devappspros.barcodescanner.presentation.customView.preferences.DevAppsCustomPreferenceCategory>
+
+</PreferenceScreen>

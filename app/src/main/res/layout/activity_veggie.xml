@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devappspros.barcodescanner.presentation.customView.DevAppsActivityLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_veggie_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.views.activities.VeggieActivityDevApps">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/activity_veggie_no_ingredients_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:paddingVertical="@dimen/normal_margin"
+            android:paddingHorizontal="@dimen/large_margin"
+            android:text="@string/ingredients_no_information_found_label"
+            style="@style/AppTheme.TextView.Appearance.Subtitle"
+            android:visibility="gone" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/activity_veggie_nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/activity_veggie_ingredients_list_entitled_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/normal_margin"
+                    android:paddingHorizontal="@dimen/large_margin"
+                    android:text="@string/ingredient_veggie_entitled_label"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"
+
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/activity_veggie_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingVertical="@dimen/normal_margin"
+                    android:paddingHorizontal="@dimen/large_margin"
+
+                    app:layout_constraintTop_toBottomOf="@id/activity_veggie_ingredients_list_entitled_text_view"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </FrameLayout>
+
+</com.devappspros.barcodescanner.presentation.customView.DevAppsActivityLayout>

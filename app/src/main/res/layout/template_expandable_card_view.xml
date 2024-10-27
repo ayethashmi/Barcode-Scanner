@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/template_expandable_card_view_material_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.devappspros.barcodescanner.presentation.customView.DevAppsExpandableView
+        android:id="@+id/template_expandable_card_view_expandable_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/small_margin"
+        android:animateLayoutChanges="true"
+        app:open="true"
+        app:iconHeaderId="@id/template_expandable_card_view_header_icon_image_view">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:id="@+id/template_expandable_card_view_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/large_margin"
+            android:paddingEnd="@dimen/large_margin"
+            android:paddingTop="@dimen/large_margin"
+            android:paddingBottom="@dimen/normal_margin"
+            android:clipToPadding="false">
+
+            <FrameLayout
+                android:id="@+id/template_expandable_card_view_header_frame_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/template_expandable_card_view_header_icon_image_view"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"/>
+
+            <ImageView
+                android:id="@+id/template_expandable_card_view_header_icon_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/normal_margin"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/baseline_keyboard_arrow_down_24"
+                android:contentDescription="@string/image_view_description_icon" />
+
+        </RelativeLayout>
+
+        <!-- Body -->
+        <FrameLayout
+            android:id="@+id/template_expandable_card_view_body_frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/large_margin"
+            android:paddingEnd="@dimen/large_margin"
+            android:paddingBottom="@dimen/large_margin"
+            android:paddingTop="0dp"
+            android:clipToPadding="false"
+            android:layout_below="@id/template_expandable_card_view_header_layout" />
+
+    </com.devappspros.barcodescanner.presentation.customView.DevAppsExpandableView>
+
+</com.google.android.material.card.MaterialCardView>

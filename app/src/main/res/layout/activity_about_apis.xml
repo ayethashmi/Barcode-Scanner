@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devappspros.barcodescanner.presentation.customView.DevAppsActivityLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about_apis_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.views.activities.DevAppsDevAppsAboutApisActivityDevApps">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/normal_margin">
+
+            <!-- Foreground -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_foreword_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/large_margin">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_foreword_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/thin_margin"
+                    android:text="@string/preferences_information_about_remote_api_foreword"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stroke_width"
+                    android:layout_below="@id/activity_about_apis_foreword_title_text_view"
+                    android:background="?colorOutline" />
+
+            </RelativeLayout>
+
+            <!-- What is an API -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_what_is_api_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_below="@id/activity_about_apis_foreword_layout">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_what_is_api_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:text="@string/preferences_information_about_remote_api_what_is_an_api_title"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_what_is_api_description_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_what_is_api_title_text_view"
+                    android:text="@string/preferences_information_about_remote_api_what_is_an_api_description"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+            </RelativeLayout>
+
+            <!-- Barcode types concerned -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_barcode_types_concerned_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_below="@id/activity_about_apis_what_is_api_layout">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_barcode_types_concerned_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:text="@string/preferences_information_about_remote_api_barcode_types_concerned_title"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_barcode_types_concerned_description_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_barcode_types_concerned_title_text_view"
+                    android:text="@string/preferences_information_about_remote_api_barcode_types_concerned_description"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+            </RelativeLayout>
+
+            <!-- Product types currently supported -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_product_types_supported_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_below="@id/activity_about_apis_barcode_types_concerned_layout">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_product_types_supported_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:text="@string/preferences_information_about_remote_api_product_types_supported_title"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_product_types_supported_food_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_product_types_supported_title_text_view"
+                    android:text="@string/preferences_information_about_remote_api_product_types_supported_food"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_product_types_supported_beauty_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_product_types_supported_food_text_view"
+                    android:text="@string/preferences_information_about_remote_api_product_types_supported_beauty"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_product_types_supported_pet_food_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_product_types_supported_beauty_text_view"
+                    android:text="@string/preferences_information_about_remote_api_product_types_supported_pet_food"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_product_types_supported_music_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_product_types_supported_pet_food_text_view"
+                    android:text="@string/preferences_information_about_remote_api_product_types_supported_music"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_product_types_supported_book_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_product_types_supported_music_text_view"
+                    android:text="@string/preferences_information_about_remote_api_product_types_supported_book"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+            </RelativeLayout>
+
+            <!-- Some additional information -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_some_additional_information_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_below="@id/activity_about_apis_product_types_supported_layout">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_some_additional_information_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:text="@string/preferences_information_about_remote_api_some_additional_information_title"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_some_additional_information_description_1_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_some_additional_information_title_text_view"
+                    android:text="@string/preferences_information_about_remote_api_some_additional_information_description_1"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_some_additional_information_description_2_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_some_additional_information_description_1_text_view"
+                    android:text="@string/preferences_information_about_remote_api_some_additional_information_description_2"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+            </RelativeLayout>
+
+            <!-- How it works -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_how_it_works_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_marginTop="@dimen/large_margin"
+                android:layout_below="@id/activity_about_apis_some_additional_information_layout">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_how_it_works_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:text="@string/preferences_information_about_remote_api_how_it_works"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/stroke_width"
+                    android:layout_below="@id/activity_about_apis_how_it_works_title_text_view"
+                    android:background="?colorOutline" />
+
+            </RelativeLayout>
+
+            <!-- Automatic search -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_automatic_search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_below="@id/activity_about_apis_how_it_works_layout">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_automatic_search_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:text="@string/preferences_information_about_remote_api_automatic_search_title"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_automatic_search_description_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_automatic_search_title_text_view"
+                    android:text="@string/preferences_information_about_remote_api_automatic_search_description"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+            </RelativeLayout>
+
+            <!-- Manual search -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_manual_search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_below="@id/activity_about_apis_automatic_search_layout">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_manual_search_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:text="@string/preferences_information_about_remote_api_manual_search_title"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_manual_search_description_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_manual_search_title_text_view"
+                    android:text="@string/preferences_information_about_remote_api_manual_search_description"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+            </RelativeLayout>
+
+            <!-- About books -->
+            <RelativeLayout
+                android:id="@+id/activity_about_apis_about_books_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_below="@id/activity_about_apis_manual_search_layout">
+
+                <TextView
+                    android:id="@+id/activity_about_apis_about_books_title_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/normal_margin"
+                    android:text="@string/preferences_information_about_remote_api_about_books_title"
+                    style="@style/AppTheme.TextView.Appearance.Title.Primary"/>
+
+                <TextView
+                    android:id="@+id/activity_about_apis_about_books_description_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/activity_about_apis_about_books_title_text_view"
+                    android:text="@string/preferences_information_about_remote_api_about_books_description"
+                    style="@style/AppTheme.TextView.Appearance.Normal.Secondary"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</com.devappspros.barcodescanner.presentation.customView.DevAppsActivityLayout>

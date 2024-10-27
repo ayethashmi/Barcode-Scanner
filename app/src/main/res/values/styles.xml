@@ -1,0 +1,177 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Toolbar -->
+    <style name="AppTheme.ToolBar.TextAppearance" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <!-- TabLayout -->
+    <style name="AppTheme.TabLayout.TextAppearance" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <!-- TextView: Title -->
+    <style name="AppTheme.TextView.Appearance.Title.Primary" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Title.Variant" parent="TextAppearance.Material3.TitleSmall">
+        <item name="textColor">?colorPrimary</item>
+        <item name="android:textColor">?colorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- TextView: Subtitle -->
+    <style name="AppTheme.TextView.Appearance.Subtitle" parent="TextAppearance.Material3.TitleSmall">
+        <item name="textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- TextView: Normal Text -->
+    <style name="AppTheme.TextView.Appearance.Normal.Primary" parent="TextAppearance.Material3.TitleSmall">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Normal.Link" parent="AppTheme.TextView.Appearance.Normal.Primary">
+        <item name="textColor">?android:attr/textColorLink</item>
+        <item name="android:textColor">?android:attr/textColorLink</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Normal.Error" parent="AppTheme.TextView.Appearance.Normal.Primary">
+        <item name="android:textColor">?colorNegative</item>
+    </style>
+
+    <style name="AppTheme.TextView.Appearance.Normal.Secondary" parent="TextAppearance.Material3.BodyMedium">
+        <item name="textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- CardView -->
+    <style name="AppTheme.CardView.Material3" parent="@style/Widget.Material3.CardView.Elevated">
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardCornerRadius">@dimen/card_standard_corner_radius</item>
+    </style>
+
+    <!-- AppBarLayout -->
+    <style name="AppTheme.AppBarLayout.Style" parent="Widget.Material3.AppBarLayout" />
+
+    <!-- BottomNavigationView -->
+    <style name="AppTheme.BottomNavigationView.Style" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemActiveIndicatorStyle">@style/AppTheme.BottomNavigationView.ActiveIndicator.Style</item>
+    </style>
+
+    <style name="AppTheme.BottomNavigationView.ActiveIndicator.Style" parent="Widget.Material3.BottomNavigationView.ActiveIndicator" />
+
+    <!-- NavigationRailView -->
+    <style name="AppTheme.NavigationRailView.Style" parent="Widget.Material3.NavigationRailView">
+        <item name="itemActiveIndicatorStyle">@style/AppTheme.NavigationRailView.ActiveIndicator.Style</item>
+    </style>
+
+    <style name="AppTheme.NavigationRailView.ActiveIndicator.Style" parent="Widget.Material3.NavigationRailView.ActiveIndicator" />
+
+    <!-- Slider -->
+    <style name="AppTheme.Slider" parent="Widget.Material3.Slider">
+        <item name="thumbColor">?colorPrimary</item>
+        <item name="trackColor">?colorSecondaryContainer</item>
+        <item name="haloColor">?colorSecondaryContainer</item>
+    </style>
+
+    <style name="AppTheme.SeekBarPreferenceCompat.Material3" parent="Preference.SeekBarPreference.Material">
+        <item name="showSeekBarValue">true</item>
+    </style>
+
+    <!-- Switch -->
+    <style name="AppTheme.Switch.Material3" parent="Widget.Material3.CompoundButton.MaterialSwitch" />
+
+    <style name="AppTheme.SwitchPreferenceCompat.Material3" parent="Preference.SwitchPreferenceCompat.Material">
+        <item name="android:widgetLayout">@layout/template_preference_material_switch</item>
+    </style>
+
+    <!-- Chip -->
+    <style name="AppTheme.Chip" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">?colorSurface</item>
+        <item name="android:textAppearance">@style/AppTheme.Chip.Text</item>
+    </style>
+
+    <style name="AppTheme.Chip.Text" parent="TextAppearance.MaterialComponents.Chip">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- TextInputLayout -->
+    <style name="AppTheme.TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="startIconTint">?android:textColorSecondary</item>
+    </style>
+
+    <style name="AppTheme.InputEditTextCaptionFont" parent="">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- AutoCompleteTextView -->
+    <style name="AppTheme.AutoCompleteTextView.TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="materialThemeOverlay">@style/AppTheme.AutoCompleteTextView.TextInputLayoutThemeOverlay</item>
+    </style>
+
+    <style name="AppTheme.AutoCompleteTextView.TextInputLayoutThemeOverlay" parent="">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+        <item name="autoCompleteTextViewStyle">@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu</item>
+    </style>
+
+    <!-- Material Button -->
+    <style name="AppTheme.MaterialButton" parent="Widget.Material3.Button">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- DialogTextButtonStyle -->
+    <style name="AppTheme.Dialog.TextButton.Style" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- DialogTitleStyle -->
+    <style name="AppTheme.Dialog.Title" parent="MaterialAlertDialog.Material3.Title.Text.CenterStacked">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <!-- AlertDialog -->
+    <style name="AppTheme.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog.Centered">
+        <!-- Overlay -->
+        <item name="android:dialogCornerRadius" tools:targetApi="p">@dimen/dialog_corner_radius</item>
+        <item name="dialogCornerRadius">@dimen/dialog_corner_radius</item>
+        <item name="android:colorBackground">?colorSurfaceContainer</item>
+        <item name="android:windowElevation">6dp</item>
+
+        <!-- Title Text -->
+        <item name="materialAlertDialogTitleTextStyle">@style/AppTheme.Dialog.Title</item>
+
+        <!-- Pour les checked button dans preferences -->
+        <item name="android:checkedTextViewStyle">@style/AppTheme.TextView.Appearance.Normal.Primary</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/AppTheme.TextView.Appearance.Normal.Primary</item>
+
+        <!-- Buttons -->
+        <item name="buttonBarPositiveButtonStyle">@style/AppTheme.MaterialButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/AppTheme.Dialog.TextButton.Style</item>
+        <item name="buttonBarNeutralButtonStyle">@style/AppTheme.Dialog.TextButton.Style</item>
+    </style>
+
+    <!-- Overflow Menu (Placement de Item Menu) -->
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">4.0dp</item>
+    </style>
+
+</resources>

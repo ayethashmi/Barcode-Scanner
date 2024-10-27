@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.devappspros.barcodescanner.presentation.customView.DevAppsExpandableCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_nutrient_level_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:isOpen="false"
+    tools:context=".presentation.views.fragments.barcodeAnalysis.analysis.foodProduct.nutritionFacts.DevAppsFoodAnalysisNutrientLevelFragment">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/fragment_food_analysis_nutrient_level_layout_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@id/fragment_food_analysis_nutrient_level_layout_right"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/fragment_food_analysis_nutrient_level_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/small_margin"
+                style="@style/AppTheme.TextView.Appearance.Title.Primary" />
+
+            <TextView
+                android:id="@+id/fragment_food_analysis_nutrient_level_subtitle_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fragment_food_analysis_nutrient_level_title_text_view"
+                style="@style/AppTheme.TextView.Appearance.Normal.Secondary" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_food_analysis_nutrient_level_layout_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/fragment_food_analysis_nutrient_level_quantity_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                style="@style/AppTheme.TextView.Appearance.Title.Primary" />
+
+            <ImageView
+                android:id="@+id/fragment_food_analysis_nutrient_level_indicator_image_view"
+                android:layout_width="@dimen/image_risk_indicator_size"
+                android:layout_height="@dimen/image_risk_indicator_size"
+                android:layout_margin="@dimen/normal_margin"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/fragment_food_analysis_nutrient_level_quantity_text_view"
+                android:src="@drawable/circle"
+                android:contentDescription="@string/image_view_description_icon" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!-- Body -->
+    <com.devappspros.barcodescanner.presentation.customView.DevAppsHorizontalGraphView
+        android:id="@+id/fragment_food_analysis_nutrient_level_horizontal_graph_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        app:barHeight="6sp"
+        app:textSize="@dimen/normal_text_size"
+        app:textColor="?android:textColorPrimary"
+        app:lowBarColor="?colorPositive"
+        app:mediumBarColor="?colorMedium"
+        app:highBarColor="?colorNegative"
+        app:fontFamily="sans-serif-medium" />
+
+</com.devappspros.barcodescanner.presentation.customView.DevAppsExpandableCardView>

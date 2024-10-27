@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.devappspros.barcodescanner.presentation.customView.DevAppsActivityLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bank_list_activity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.views.activities.DevAppsBankListActivityDevApps">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/activity_bank_list_empty_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/normal_margin"
+            android:layout_gravity="start|top"
+            android:text="@string/list_bank_empty_message"
+            android:visibility="gone"
+            style="@style/AppTheme.TextView.Appearance.Subtitle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/activity_bank_list_history_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:clipChildren="false" />
+
+    </FrameLayout>
+
+</com.devappspros.barcodescanner.presentation.customView.DevAppsActivityLayout>

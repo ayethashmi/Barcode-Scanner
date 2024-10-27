@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/normal_margin"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/recycler_view_item_veggie_ingredient_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+        android:textAlignment="textStart"
+        android:textIsSelectable="true"
+        style="@style/AppTheme.TextView.Appearance.Normal.Secondary" />
+
+    <TextView
+        android:id="@+id/recycler_view_item_veggie_vegan_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+        android:textAlignment="textEnd"
+        android:textIsSelectable="true"
+        style="@style/AppTheme.TextView.Appearance.Normal.Primary" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1" />
+
+    <TextView
+        android:id="@+id/recycler_view_item_veggie_vegetarian_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".3"
+        android:textAlignment="textEnd"
+        android:textIsSelectable="true"
+        style="@style/AppTheme.TextView.Appearance.Normal.Primary" />
+</LinearLayout>
